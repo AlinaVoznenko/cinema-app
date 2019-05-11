@@ -1,0 +1,59 @@
+<div class="datepicker">
+<h2>Select day:</h2>
+<div class="form-check form-check-inline" *ngFor="let day of days">
+    <input class=""
+    type="radio"
+    name="group1"
+    id={{day.id}}
+    value={{day.name}}
+    (change)="radioChangeHandler($event)">
+    <label for={{day.id}}>{{day.name}}</label>
+  </div>
+
+<hr>
+<div  class="timepicker"> 
+    <h2>Select time:</h2>
+    <div class="form-check form-check-inline" *ngFor="let time of times">
+        <input class=""
+        type="radio"
+        name="group2"
+        id={{time.id}}
+        value={{time.name}}
+        (change)="radioChangeTime($event)">
+        <label for={{time.id}}>{{time.name}}</label>
+      </div>
+</div>
+    
+<hr>
+<!--
+<div>
+    <button type="button" class="btn btn-secondary btn-lg btn-block" (click)="concertHall()">Choose Seats</button>
+</div>
+-->
+<hr>
+<!--
+<div class="form-check form-check-inline" *ngFor="let seat of seats">
+<input class="checkSeat"
+type="checkbox"
+name="seatsGroup"
+id={{seat.index}}
+value={{seat.index}}
+(change)="checkboxChangeSeat($event)">
+<label class="seat.index"for={{seat.index}}>{{seat.index}}</label>
+</div>
+-->
+
+<div>
+    <span>You selected:</span> 
+    <hr>
+    <ul class="list-group">
+      <li class="list-group-item">{{selectedDay}}</li>
+      <li class="list-group-item">{{selectedTime}}</li>
+    </ul>
+</div>
+
+<p id='seatidd'></p>
+
+
+
+

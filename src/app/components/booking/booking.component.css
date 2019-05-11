@@ -1,0 +1,65 @@
+ input[type='radio'], label {
+        font-family: 'system-ui', Arial, Helvetica, sans-serif;
+        background: rgb(0, 0, 0);
+        margin: 0 auto;
+        color: white;
+        padding: 15px;
+        margin: 10px ;
+    }
+    /*
+    input[type="radio"]:checked{
+        color: rgb(0, 0, 0);
+        
+    }
+    */
+    input[type='checkbox'] {
+        font-family: 'system-ui', Arial, Helvetica, sans-serif;
+        background: rgb(0, 255, 0);
+        margin: 0 auto;
+        color: white;
+        padding: 15px;
+        margin: 10px ;
+    }
+.datepicker {
+    font-family: 'system-ui', Arial, Helvetica, sans-serif;
+    padding: 15px;
+    margin: 50px auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    
+}
+
+ 
+input[type="radio"]{display: none;}
+
+input[type="checkbox"]{display: none;}
+
+
+input[type="radio"]:checked+label{
+    border: rgb(0, 0, 0) solid 3px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+input[type="checkbox"]:checked+label{
+    border: rgb(0, 0, 0) solid 3px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+h2 {
+color: rgb(0, 0, 0);
+font-size: 15px;
+}
+
+.list-group-item {
+    color: rgb(0, 0, 0);
+
+}
+
+button {
+    color:black;
+    background-color: rgb(255, 255, 255);
+    border:  rgb(0, 0, 0) solid 1px;
+}
